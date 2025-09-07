@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel Smart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="./js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+    <div class="container">
+     
+      <a class="navbar-brand fw-bold logo-text d-flex align-items-center" href="index.html">
+        <img src="./index images/istockphoto-1078558156-612x612-removebg-preview.png" alt="Logo" class="me-2" style="height:40px;">
+        Travel Smart
+      </a>
+
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center nav-text">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="catalogDropdown" role="button" data-bs-toggle="dropdown">
+              Catalog
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./destinations.html">Destinations</a></li>
+              <li><a class="dropdown-item" href="./packages.html">Packages</a></li>
+              <li><a class="dropdown-item" href="./hotels.html">Hotels & Resorts</a></li>
+              <li><a class="dropdown-item" href="./transport.html">Transport Options</a></li>
+            </ul>
+          </li>
+
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
+              About
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./aboutus.html">About Us</a></li>
+              <li><a class="dropdown-item" href="./ourmission.html">Our Mission</a></li>
+              <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-bs-toggle="dropdown">
+              Login
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./login.html">User Login</a></li>
+              <li><a class="dropdown-item" href="./login.html">Admin Login</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="btn btn-warning text-dark ms-lg-3" href="signup.html">Signup</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<header class="hero">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="./videos/allah ki kasam akhri.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <div class="hero-content text-start text-white">
+    <h2 class="hero-offer">Step into Autumn<br>with up to <span class="highlight">15% off</span></h2>
+    <a href="booking.html" class="btn btn-outline-light btn-lg mt-3">Book Now</a>
+  </div>
+</header>
+
+
+
+
+
+
+
+
+<section class="flight-search container">
+  <div class="search-card shadow p-4 rounded">
+    <ul class="nav nav-tabs mb-3" id="searchTabs" role="tablist">
+      <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#flight">✈️ Book a flight</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#stopover">🏨 Stopover / Packages</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#manage">📑 Manage / Check in</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#status">📍 Flight status</button></li>
+    </ul>
+
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="flight">
+        <form class="row g-3">
+          <div class="col-12 d-flex gap-3">
+            <label><input type="radio" name="trip" checked> Return</label>
+            <label><input type="radio" name="trip"> One way</label>
+            <label><input type="radio" name="trip"> Multi-city</label>
+          </div>
+
+          <div class="col-md-6"><input type="text" class="form-control" placeholder="From"></div>
+          <div class="col-md-6"><input type="text" class="form-control" placeholder="To"></div>
+
+          <div class="col-md-6"><label>Departure</label><input type="date" class="form-control"></div>
+          <div class="col-md-6"><label>Return</label><input type="date" class="form-control"></div>
+
+          <div class="col-12"><select class="form-select"><option>1 Passenger Economy</option></select></div>
+
+          <div class="col-12 d-flex justify-content-between align-items-center">
+            <div><input type="checkbox"> Book using points <a href="#" class="ms-3">+ Add promo code</a></div>
+            <button type="submit" class="btn btn-warning btn-lg rounded-pill">Search flights</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="tab-pane fade" id="stopover">
+        <ul class="nav nav-pills mb-3">
+          <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#qatarStop">Qatar Stopover</button></li>
+          <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#flightsHotels">Flights + Hotels</button></li>
+          <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#hotels">Hotels</button></li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="qatarStop">
+            <form class="row g-3">
+              <div class="col-12 d-flex gap-3">
+                <label><input type="radio" name="stop-trip" checked> Return</label>
+                <label><input type="radio" name="stop-trip"> One way</label>
+                <label><input type="radio" name="stop-trip"> Multi-city</label>
+              </div>
+
+              <p>Explore Qatar with stopover packages starting from USD 14 at 4-star and 5-star hotels.</p>
+
+              <div class="col-md-6"><input type="text" class="form-control" placeholder="From"></div>
+              <div class="col-md-6"><input type="text" class="form-control" placeholder="To"></div>
+
+              <div class="col-md-3"><label>Departure</label><input type="date" class="form-control"></div>
+              <div class="col-md-3"><label>Return</label><input type="date" class="form-control"></div>
+              <div class="col-md-3"><label>Passengers / Room</label><input type="text" class="form-control" placeholder="2 Passengers, 1 Room"></div>
+              <div class="col-md-3"><label>Class</label><select class="form-select"><option>Economy</option><option>Business</option></select></div>
+
+              <div class="col-6">
+                <label>When would you like to add stop in Doha?</label>
+                <div><input type="radio" name="doha" checked> Departure</div>
+                <div><input type="radio" name="doha"> Return</div>
+              </div>
+
+              <div class="col-6">
+                <label>How many days stay?</label>
+                <div class="d-flex align-items-center gap-2">
+                  <button type="button" class="btn btn-outline-secondary">-</button>
+                  <input type="text" value="1" class="form-control w-25 text-center">
+                  <button type="button" class="btn btn-outline-secondary">+</button>
+                </div>
+              </div>
+
+              <div class="col-12 d-flex justify-content-between">
+                <a href="#">+ Add promo code</a>
+                <button class="btn btn-danger btn-lg rounded-pill">Search flights</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="tab-pane fade" id="flightsHotels">
+            <p>Form for booking flight + hotels together.</p>
+          </div>
+
+          <div class="tab-pane fade" id="hotels">
+            <p>Form for booking hotels only.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="tab-pane fade" id="manage">
+        <ul class="nav nav-pills mb-3">
+          <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#manageBook">Manage booking</button></li>
+          <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#checkIn">Check in</button></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="manageBook">
+            <form class="row g-3">
+              <div class="col-md-6"><input type="text" class="form-control" placeholder="Booking Reference"></div>
+              <div class="col-md-6"><input type="text" class="form-control" placeholder="Last Name"></div>
+              <div class="col-12 text-end"><button class="btn btn-danger rounded-pill">Retrieve booking</button></div>
+            </form>
+          </div>
+          <div class="tab-pane fade" id="checkIn">
+            <p>Online check-in form here.</p>
+          </div>
+        </div>
+      </div>
+
+   
+      <div class="tab-pane fade" id="status">
+        <ul class="nav nav-pills mb-3">
+          <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#byRoute">By route</button></li>
+          <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#byFlight">By flight number</button></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="byRoute">
+            <form class="row g-3">
+              <div class="col-md-4"><input type="text" class="form-control" placeholder="From"></div>
+              <div class="col-md-4"><input type="text" class="form-control" placeholder="To"></div>
+              <div class="col-md-4"><input type="date" class="form-control"></div>
+              <div class="col-12 text-end"><button class="btn btn-danger rounded-pill">Search</button></div>
+            </form>
+          </div>
+          <div class="tab-pane fade" id="byFlight">
+            <form class="row g-3">
+              <div class="col-md-6"><input type="text" class="form-control" placeholder="Flight Number"></div>
+              <div class="col-md-6"><input type="date" class="form-control"></div>
+              <div class="col-12 text-end"><button class="btn btn-danger rounded-pill">Search</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="trip-heading container my-5">
+  <h2 class="trip-title">Start planning your next trip</h2>
+  <p class="trip-subtitle">Thinking of travelling somewhere soon? Here are some options to help you get started.</p>
+</section>
+
+
+<div class="card-ka-bara-bhai">
+
+  
+
+
+
+
+
+<div class="card" style="width: 18rem; margin-top: 30px; margin-left: 7%;">
+  <img src="./index images/austria vietnam.jpg " class="card-img-top" alt="..." width="10rem" height="170rem">
+  <div class="card-body">
+    <h5 class="card-title">AUSRIA, VIETNAM</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-warning"><b>Go somewhere</b></a>
+  </div>
+</div>
+
+
+
+<div class="card" style="width: 18rem; margin-top: 30px; margin-left: 7%;">
+  <img src="./index images/baali indonesia.jpg " class="card-img-top" alt="..." width="10rem" height="170rem">
+  <div class="card-body">
+    <h5 class="card-title">BAALI, INDONESIA</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-warning"><b>Go somewhere</b></a>
+  </div>
+</div>
+
+
+
+
+
+<div class="card" style="width: 18rem; margin-top: 30px; margin-left: 7%;">
+  <img src="./index images/beijing china.jpg" class="card-img-top" alt="..."    width="10rem" height="170rem">
+  <div class="card-body">
+    <h5 class="card-title">BEIJING, CHINA</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-warning"><b>Go somewhere</b></a>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="chota-bhai">
+
+
+<div class="card" style="width: 18rem; margin-top: 30px; margin-left: 7%;">
+  <img src="./index images/skardu pakistan.jpg" class="card-img-top" alt="..."   width="10rem" height="170rem">
+  <div class="card-body">
+    <h5 class="card-title">SKARDU, PKAISTAN</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-warning"><b>Go somewhere</b></a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="card" style="width: 18rem; margin-top: 30px; margin-left: 7%;">
+  <img src="./index images/tokoyo japan.jpg" class="card-img-top" alt="..."   width="10rem" height="170rem">
+  <div class="card-body">
+    <h5 class="card-title">TOKOYO, JAPAN</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-warning"><b>Go somewhere</b></a>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="card" style="width: 18rem; margin-top: 30px; margin-left: 7%;">
+  <img src="./index images/toronto canada.jpg" class="card-img-top" alt="..."    width="10rem" height="170rem">
+  <div class="card-body">
+    <h5 class="card-title">TORONTO, CANADA</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-warning"><b>Go somewhere</b></a>
+  </div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<section class="offers-section container my-5">
+  <h2 class="mb-2">Offers</h2>
+  <p class="text-muted mb-4">Promotions, deals and special offers for you</p>
+
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="offer-card">
+        <img src="./index images/pic 1.jpg" alt="Holiday Rentals">
+        <div class="offer-content">
+          <small>Holiday rentals</small>
+          <h5>Live the dream in a holiday home</h5>
+          <p>Choose from houses, villas, chalets and more</p>
+          <a href="./catalog/packages/packages.html" class="btn btn-primary">Book yours</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="offer-card">
+        <img src="./index images/pic 2.jpg" alt="Escape Deals">
+        <div class="offer-content">
+          <small>Late Escape Deals</small>
+          <h5>Go for a good time, not a long time</h5>
+          <p>Squeeze out the last bit of sun with at least 15% off</p>
+          <a href="./catalog/packages/packages.html" class="btn btn-primary">Find deals</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-column">
+        <h4>TRAVEL SMART</h4>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press releases</a></li>
+          <li><a href="#">Sponsorship</a></li>
+          <li><a href="#">Annual reports</a></li>
+          <li><a href="#">Environmental sustainability</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Group companies</h4>
+        <ul>
+          <li><a href="#">Hamad International Airport</a></li>
+          <li><a href="#">Travel Smart Executive</a></li>
+          <li><a href="#">Travel Smart Duty Free</a></li>
+          <li><a href="#">Travel Smart Cargo</a></li>
+          <li><a href="#">Internal Media Services</a></li>
+          <li><a href="#">Design Organisation</a></li>
+          <li><a href="#">Group companies</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Business solutions</h4>
+        <ul>
+          <li><a href="#">Corporate travel</a></li>
+          <li><a href="#">Beyond Business</a></li>
+          <li><a href="#">QMICE meetings and events</a></li>
+          <li><a href="#">Advertise with us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Business partners</h4>
+        <ul>
+          <li><a href="#">Affiliate marketing</a></li>
+          <li><a href="#">e-Procurement and Supplier Registration</a></li>
+          <li><a href="#">Trade partners</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Browse FAQs</a></li>
+          <li><a href="#">Travel alerts</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column social">
+        <h4>Let’s stay connected</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-awards">
+      <div>🏆 World’s Best Airline</div>
+      <div>🏆 World’s Best Business Class</div>
+      <div>🏆 World’s Best Business Class Lounge</div>
+      <div>🏆 Best Airline in the Middle East</div>
+    </div>
+
+    <div class="footer-bottom">
+      <ul>
+        <li><a href="#">Cookie policy</a></li>
+        <li><a href="#">Legal</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Combating human trafficking</a></li>
+        <li><a href="#">Sitemap</a></li>
+        <li><a href="#">Cookie Consent</a></li>
+      </ul>
+      <p>© TRAVEL SMART. All rights reserved</p>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./script.js">
+</body>
+</html>

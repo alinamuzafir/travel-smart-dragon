@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="contact-style.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="./js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<video autoplay muted loop id="bg-video">
+  <source src="./login/images/yecheckkrooo.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+    
+  
+
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you. Please fill out the form below.</p>
+
+    <form id="contactForm" class="contact-form">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <input type="text" name="subject" placeholder="Subject" required>
+      </div>
+      <div class="form-group">
+        <textarea name="message" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <script src="contact-script.js"></script>
+</body>
+</html>

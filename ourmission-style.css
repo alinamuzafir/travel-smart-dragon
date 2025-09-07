@@ -1,0 +1,279 @@
+/* ==========================
+   NAVBAR STYLING
+   ========================== */
+.logo-text {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.logo-text img {
+  height: 40px;
+  width: auto;
+}
+
+.nav-text .nav-link {
+  font-size: 1.2rem;
+  padding: 0.8rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-text .nav-link:hover {
+  color: #ffc107 !important;
+}
+
+.navbar .btn {
+  font-size: 1.1rem;
+  padding: 0.6rem 1.3rem;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.navbar .btn:hover {
+  background-color: #fd7e14;
+  color: #fff !important;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  animation: fadeIn 0.3s ease;
+}
+
+.dropdown-menu {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+
+
+/* Hero Section */
+.mission-hero {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-top: 70px; /* navbar ke neeche thoda gap */
+}
+
+.mission-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(65%);
+}
+
+.mission-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.mission-overlay h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+/* Mission Timeline */
+.mission-timeline {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.mission-timeline h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #0d3b66;
+}
+
+/* Timeline Base */
+.timeline {
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+  padding: 20px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: #0d3b66;
+  transform: translateX(-50%);
+}
+
+/* Timeline Items */
+.timeline-item {
+  margin: 20px 0;
+  width: 50%;
+  position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.timeline-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, #0d3b66, #3c6e71);
+  color: #fff;
+}
+
+.timeline-content h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: inherit;
+}
+
+.timeline-content p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.timeline-content p b {
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+.site-footer {
+  background: #f9f9f9;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.social-icons a:hover {
+  color: #777;
+}
+
+.footer-awards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 0;
+  font-size: 14px;
+  text-align: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ddd;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.footer-bottom ul li a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #333;
+}
+
+.footer-bottom ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom p {
+  font-size: 13px;
+  color: #666;
+}
+

@@ -1,0 +1,320 @@
+/* ==========================
+   NAVBAR STYLING
+   ========================== */
+.logo-text {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.logo-text img {
+  height: 40px;
+  width: auto;
+}
+
+.nav-text .nav-link {
+  font-size: 1.2rem;
+  padding: 0.8rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-text .nav-link:hover {
+  color: #ffc107 !important;
+}
+
+.navbar .btn {
+  font-size: 1.1rem;
+  padding: 0.6rem 1.3rem;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.navbar .btn:hover {
+  background-color: #fd7e14;
+  color: #fff !important;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  animation: fadeIn 0.3s ease;
+}
+
+.dropdown-menu {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 400px; /* tum adjust kar sakte ho (350–450px best hai) */
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* puri width fill hogi, crop bhi hoga */
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  background: rgba(0,0,0,0.5); /* halka sa background for readability */
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: url("./images/Untitled\ design.jpg") no-repeat center center/cover; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 800; /* Bold */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: rgba(0, 0, 0, 0.5); /* optional for readability */
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 40px 0 20px;
+  text-align: center;
+  color: #0077b6;
+}
+
+/* Card Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 0 10%;
+  margin-bottom: 50px;
+}
+
+/* Hotel Cards */
+.hotel-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hotel-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.hotel-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.hotel-card:hover img {
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  color: #023e8a;
+  margin-bottom: 5px;
+}
+
+.card-content p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #27ae60;
+  margin: 10px 0;
+}
+
+.btn-box {
+  margin-top: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  margin: 5px 5px 0 0;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn {
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  color: #fff;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
+}
+
+.btn.secondary {
+  background: transparent;
+  color: #0077b6;
+  border: 2px solid #0077b6;
+}
+
+.btn.secondary:hover {
+  background: #0077b6;
+  color: #fff;
+}
+
+
+
+
+
+
+
+.site-footer {
+  background: #f9f9f9;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.social-icons a:hover {
+  color: #777;
+}
+
+.footer-awards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 0;
+  font-size: 14px;
+  text-align: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ddd;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.footer-bottom ul li a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #333;
+}
+
+.footer-bottom ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom p {
+  font-size: 13px;
+  color: #666;
+}
+

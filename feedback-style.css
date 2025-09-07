@@ -1,0 +1,141 @@
+/* ==========================
+   NAVBAR STYLING
+   ========================== */
+.logo-text {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.logo-text img {
+  height: 40px;
+  width: auto;
+}
+
+.nav-text .nav-link {
+  font-size: 1.2rem;
+  padding: 0.8rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-text .nav-link:hover {
+  color: #ffc107 !important;
+}
+
+.navbar .btn {
+  font-size: 1.1rem;
+  padding: 0.6rem 1.3rem;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.navbar .btn:hover {
+  background-color: #fd7e14;
+  color: #fff !important;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  animation: fadeIn 0.3s ease;
+}
+
+.dropdown-menu {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+
+/* Background Video */
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; /* Send behind everything */
+  object-fit: cover; /* Cover full screen */
+  filter: brightness(0.6); /* Darken video for better readability */
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.feedback-section {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 350px;
+}
+
+.feedback-section h2 {
+  margin-bottom: 20px;
+}
+
+.emoji-rating {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.emoji-rating input {
+  display: none;
+}
+
+.emoji {
+  font-size: 40px;
+  cursor: pointer;
+  transition: transform 0.2s, filter 0.2s;
+}
+
+/* highlight selected emoji */
+.emoji-rating input:checked + .emoji {
+  transform: scale(1.3);
+  filter: drop-shadow(0 0 5px #444);
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin: 15px 0;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+button {
+  background: #444;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #666;
+}

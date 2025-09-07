@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./feedback-style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<video autoplay muted loop id="bg-video">
+  <source src="./login/images/yecheckkrooo.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+
+  <!-- Feedback Form -->
+  <section class="feedback-section">
+    <h2>We value your feedback</h2>
+    <form id="feedbackForm">
+      <div class="emoji-rating">
+        <label>
+          <input type="radio" name="mood" value="happy" required>
+          <span class="emoji">😊</span>
+        </label>
+        <label>
+          <input type="radio" name="mood" value="sad" required>
+          <span class="emoji">😞</span>
+        </label>
+      </div>
+
+      <textarea name="feedback" placeholder="Write your feedback here..." required></textarea>
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </section>
+
+
+
+
+
+
+
+
+  
+
+<link rel="stylesheet" href="./feedback-script.js">
+</body>
+</html>

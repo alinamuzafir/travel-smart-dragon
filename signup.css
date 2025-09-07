@@ -1,0 +1,132 @@
+/* Background */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+/* Background Video */
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; /* Send behind everything */
+  object-fit: cover; /* Cover full screen */
+  filter: brightness(0.6); /* Darken video for better readability */
+}
+
+
+
+
+
+/* Signup container */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Signup card */
+.signup-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  width: 350px;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.signup-card h2 {
+  margin-bottom: 8px;
+  font-size: 26px;
+  color: #333;
+}
+
+.signup-card .subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Form group */
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-group i {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 6px rgba(102,126,234,0.6);
+  outline: none;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 14px;
+  background: #667eea;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #5563d6;
+}
+
+/* Login link */
+.login-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.login-link a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+There was a problem displaying this image.
